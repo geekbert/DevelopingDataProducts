@@ -10,3 +10,6 @@ By selecting/deselecting individual stock names, chart adds/removes those stocks
 By changing date range, chart visualizes only the selected range.
 
 Application is running at: https://geekbert.shinyapps.io/frankscourseproject/ 
+
+Slidify presentation to motivate shiny app is here:
+http://geekbert.github.io/DevelopingDataProductsSlidify 
