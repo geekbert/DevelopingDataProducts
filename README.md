@@ -8,3 +8,5 @@ It represents a technical trend analysis of prices of selected stocks in softwar
 
 By selecting/deselecting individual stock names, chart adds/removes those stocks from graphic.
 By changing date range, chart visualizes only the selected range.
+
+Application is running at: https://geekbert.shinyapps.io/frankscourseproject/ 
