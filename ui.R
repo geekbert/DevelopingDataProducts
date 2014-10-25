@@ -12,16 +12,16 @@ dataset <-  y
  
 shinyUI(pageWithSidebar(
  
-  headerPanel("Stock Price Trend Analysis"),
+  headerPanel("Stock Price Trends in the Software Industry"),
   
   sidebarPanel(
 	h4('Relative change of selected stock prices in % since 1/1/2014'), 
 	#helpText("View stock price trends, or ANY trend."),
 	
-	checkboxGroupInput("SYMBOL", "Names", c("DAX"="DAX","DOW JONES"="DOW JONES","FACEBOOK"="FACEBOOK", "NASDAQ100"="NASDAQ100", "SAP"="SAP", "SOFTWARE AG"="SOFTWARE AG", "TWITTER"="TWITTER"), selected=c("DAX"="DAX","DOW JONES"="DOW JONES","FACEBOOK"="FACEBOOK", "NASDAQ100"="NASDAQ100", "SAP"="SAP", "SOFTWARE AG"="SOFTWARE AG", "TWITTER"="TWITTER")), 
+	checkboxGroupInput("SYMBOL", label = h4("Select Stocks:"), c("DAX"="DAX","DOW JONES"="DOW JONES","FACEBOOK"="FACEBOOK", "NASDAQ100"="NASDAQ100", "SAP"="SAP", "SOFTWARE AG"="SOFTWARE AG", "TWITTER"="TWITTER"), selected=c("DAX"="DAX","DOW JONES"="DOW JONES","FACEBOOK"="FACEBOOK", "NASDAQ100"="NASDAQ100", "SAP"="SAP", "SOFTWARE AG"="SOFTWARE AG", "TWITTER"="TWITTER")), 
 	#checkboxGroupInput("SYMBOL", "Names", c(levels(dataset$SYMBOL))), selected=c(levels(dataset$SYMBOL)))), 
 		
-	dateRangeInput("DATERANGE", label = h3("Date range"), start  = "2014-01-01", end = "2014-10-13")  
+	dateRangeInput("DATERANGE", label = h4("Select Date range:"), start  = "2014-01-01", end = "2014-10-13")  
 			
 
   ),
